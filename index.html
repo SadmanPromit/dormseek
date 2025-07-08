@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dormseek – Find Your Perfect Stay</title>
-  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
+      display: flex;
+      flex-direction: column;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #4a90e2;
       color: white;
@@ -20,30 +23,40 @@
       justify-content: space-between;
       align-items: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 1.5rem;
     }
+
     nav a {
       color: white;
       margin-left: 1rem;
       text-decoration: none;
       font-weight: 500;
     }
+
+    main {
+      flex: 1;
+    }
+
     .hero {
       text-align: center;
       padding: 4rem 2rem;
       background: linear-gradient(to right, #4a90e2, #50e3c2);
       color: white;
     }
+
     .hero h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
+
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
+
     .cta-button {
       background-color: white;
       color: #4a90e2;
@@ -54,6 +67,7 @@
       cursor: pointer;
       font-weight: bold;
     }
+
     .features {
       display: flex;
       flex-wrap: wrap;
@@ -61,6 +75,7 @@
       padding: 2rem;
       gap: 2rem;
     }
+
     .feature {
       background: white;
       padding: 1.5rem;
@@ -69,6 +84,7 @@
       max-width: 300px;
       text-align: center;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -89,29 +105,31 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Find Your Perfect Stay</h2>
-    <p>Affordable, flexible, and student-friendly housing—anywhere, anytime.</p>
-    <button class="cta-button">Start Searching</button>
-  </section>
+  <main>
+    <section class="hero">
+      <h2>Find Your Perfect Stay</h2>
+      <p>Affordable, flexible, and student-friendly housing—anywhere, anytime.</p>
+      <button class="cta-button">Start Searching</button>
+    </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>Verified Listings</h3>
-      <p>Every dorm and room is verified for safety and quality.</p>
-    </div>
-    <div class="feature">
-      <h3>Flexible Booking</h3>
-      <p>Book by the day, week, or semester—whatever fits your schedule.</p>
-    </div>
-    <div class="feature">
-      <h3>Student-Friendly Pricing</h3>
-      <p>Transparent pricing with no hidden fees.</p>
-    </div>
-  </section>
+    <section class="features">
+      <div class="feature">
+        <h3>Verified Listings</h3>
+        <p>Every dorm and room is verified for safety and quality.</p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Booking</h3>
+        <p>Book by the day, week, or semester—whatever fits your schedule.</p>
+      </div>
+      <div class="feature">
+        <h3>Student-Friendly Pricing</h3>
+        <p>Transparent pricing with no hidden fees.</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Computation Corporation. All rights reserved.
+    &copy; 2025 Dormseek. A product of Computation Corporation. All rights reserved.
   </footer>
 
 </body>
